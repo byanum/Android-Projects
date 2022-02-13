@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#673AB7"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:background="#FF5722"
+        android:onClick="NextActivity"
+        android:shadowColor="#FF5722"
+        android:text="Submit"
+        android:backgroundTint="#FF5722"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextReg"
+        app:layout_constraintVertical_bias="1.0"
+        app:strokeColor="#FF5722" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="254dp"
+        android:layout_height="39dp"
+        android:background="@color/white"
+        android:hint="Name"
+        android:shape="rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="59dp" />
+
+    <EditText
+        android:id="@+id/editTextReg"
+        android:layout_width="262dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/white"
+        android:hint="Registration Number"
+        android:shape="rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
